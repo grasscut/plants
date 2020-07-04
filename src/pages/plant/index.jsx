@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import { Typography, Box, Grid } from '@material-ui/core';
 import { getPlant } from '../../store/actions/plants';
 import Taxonomy from './Taxonomy';
+import Badges from './Badges';
 import { Carousel } from '../../components/ui';
 
 export default () => {
@@ -27,13 +28,17 @@ export default () => {
                 {!!plant.common_name && <Typography variant="subtitle2">({plant.scientific_name})</Typography>}
             </Box>
 
-            <Grid container spacing={2} style={{ height: "50vh" }}>
-                <Grid item xs={12} md={6} style={{ height: "100%" }}>
+            <Grid container spacing={2}>
+                <Grid item xs={12} md={6} style={{ height: "50vh" }}>
                     <Carousel images={plant.images} />
                 </Grid>
 
                 <Grid item xs={12} md={6}>
                     <Taxonomy plant={plant} />
+                </Grid>
+
+                <Grid item xs={12}>
+                    <Badges plant={plant} />
                 </Grid>
             </Grid>
         </>
