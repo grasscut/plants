@@ -17,7 +17,15 @@
         "foliage_color": "Foliage color is {{color}}",
         "seed_color": "Seed color is {{color}}",
         "min_t": "Minimal temperature is {{t}}"
+      },
+      "description": {
+        "duration": "{{name}} ({{family}}) is a {{duration}} ",
+        "flowers": "with {{color}} flowers.",
+        "flowers_conspicuous": "with {{color}} conspicuous flowers."
       }
+    },
+    "carousel": {
+      "no_images": "Images not found"
     }
   }
 }

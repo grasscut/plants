@@ -21,8 +21,12 @@ const Badge = ({ children, title, backgroundColor = theme.palette.primary, ...re
 export default ({ plant }) => {
     const { t } = useTranslation();
 
+    if (!plant.main_species) {
+        return null;
+    }
+
     return (
-        <Box display="flex" p={2}>
+        <Box display="flex">
             {!!plant.main_species.flower.color && (
                 <Badge
                     backgroundColor={plant.main_species.flower.color}

@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTranslation, Trans } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
@@ -19,16 +19,14 @@ export default () => {
     useEffect(() => {
         dispatch(getPlants());
     }, [dispatch]);
-
-    const handleSearch = useCallback((event, searchString) => {
-        event.preventDefault();
+    useEffect(() => {
         dispatch(searchPlants(searchString));
-    }, [dispatch]);
+    }, [searchString]);
 
     return (
         <Grid container justify="space-around" spacing={2}>
             <Grid item xs={12} sm={8} lg={6}>
-                <form onSubmit={(event) => handleSearch(event, searchString)}>
+                <form onSubmit={(event) => event.preventDefault()}>
                     <TextField
                         fullWidth
                         InputProps={{
@@ -43,7 +41,7 @@ export default () => {
                 <Box fontStyle="italic">
                     <Typography variant="caption">
                         <Trans i18nKey="dashboard.search_hint">
-                            Try <strong>tapertip onion</strong>
+                            Try <strong onClick={() => setSearchString('tapertip onion')}>tapertip onion</strong>
                         </Trans>
                     </Typography>
                 </Box>
@@ -56,7 +54,7 @@ export default () => {
                             <>
                                 {allPlants.map((item) => (
                                     <Grid item xs={12} sm={6} md={4} lg={3} xl={2} key={item.id}>
-                                        <Card onClick={() => history.push(`/plant/${item.id}`)}>
+                                        <Card variant="outlined" onClick={() => history.push(`/plant/${item.id}`)}>
                                             <CardContent>
                                                 <Typography>{item.common_name || item.scientific_name}</Typography>
                                             </CardContent>

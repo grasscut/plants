@@ -5,6 +5,7 @@ import { Typography, Box, Grid } from '@material-ui/core';
 import { getPlant } from '../../store/actions/plants';
 import Taxonomy from './Taxonomy';
 import Badges from './Badges';
+import Description from './Description';
 import { Carousel } from '../../components/ui';
 
 export default () => {
@@ -12,12 +13,13 @@ export default () => {
     const { id } = useParams();
 
     const plant = useSelector(state => state.plants.allPlants.find((item) => item.id === Number(id)));
+    const { loading } = useSelector(state => state.plants);
 
     useEffect(() => {
         dispatch(getPlant(id));
     }, [dispatch, id]);
 
-    if (!plant) {
+    if (!plant || loading) {
         return null;
     }
 
@@ -39,6 +41,10 @@ export default () => {
 
                 <Grid item xs={12}>
                     <Badges plant={plant} />
+                </Grid>
+
+                <Grid item xs={12}>
+                    <Description plant={plant} />
                 </Grid>
             </Grid>
         </>
