@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react';
-import { Box, CircularProgress, Backdrop } from '@material-ui/core';
+import {Box, CircularProgress, Backdrop, Grid} from '@material-ui/core';
 import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 
@@ -21,19 +21,19 @@ export default ({ images = [] }) => {
     }
 
     return (
-        <Box display="flex" justifyContent="space-between">
+        <Box display="flex" justifyContent="space-between" height="100%">
             <Box display="flex" alignItems="center" onClick={() => navigate(-1)}>
                 <NavigateBeforeIcon
                     color={currentImageIndex === 0 ? 'disabled' : 'primary'}
                 />
             </Box>
-            <Box position="relative">
+            <Box position="relative" height="100%" display="flex" alignItems="center">
                 <Backdrop open={isImageLoading} style={{ position: 'absolute', zIndex: 0 }}>
                     <CircularProgress />
                 </Backdrop>
                 <img
                     src={images[currentImageIndex].url}
-                    width="100%"
+                    style={{ maxWidth: '100%', maxHeight: '100%' }}
                     onLoad={() => setIsImageLoading(false)}
                 />
             </Box>

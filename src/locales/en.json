@@ -1,7 +1,8 @@
 {
   "translation": {
     "dashboard": {
-      "search": "Find a plant!"
+      "search": "Find a plant!",
+      "search_hint": "Try <1>tapertip onion</1>"
     },
     "plant_details": {
       "taxonomy": {

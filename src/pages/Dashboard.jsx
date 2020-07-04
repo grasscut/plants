@@ -1,8 +1,8 @@
 import React, { useEffect, useState, useCallback } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
-import { Grid, Card, CardContent, Typography, CircularProgress } from '@material-ui/core';
+import { Grid, Card, CardContent, Box, Typography, CircularProgress } from '@material-ui/core';
 import { TextField } from '../components/ui';
 import SearchIcon from '@material-ui/icons/Search';
 import { getPlants, searchPlants } from '../store/actions/plants';
@@ -40,6 +40,13 @@ export default () => {
                         }}
                     />
                 </form>
+                <Box fontStyle="italic">
+                    <Typography variant="caption">
+                        <Trans i18nKey="dashboard.search_hint">
+                            Try <strong>tapertip onion</strong>
+                        </Trans>
+                    </Typography>
+                </Box>
             </Grid>
             <Grid item xs={12}>
                 <Grid container spacing={2} justify={loading ? 'center' : 'flex-start'}>

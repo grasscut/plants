@@ -27,8 +27,8 @@ export default () => {
                 {!!plant.common_name && <Typography variant="subtitle2">({plant.scientific_name})</Typography>}
             </Box>
 
-            <Grid container spacing={2}>
-                <Grid item xs={12} md={6}>
+            <Grid container spacing={2} style={{ height: "50vh" }}>
+                <Grid item xs={12} md={6} style={{ height: "100%" }}>
                     <Carousel images={plant.images} />
                 </Grid>
 

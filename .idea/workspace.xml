@@ -14,6 +14,8 @@
       <change beforePath="$PROJECT_DIR$/src/components/layout/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ui/Carousel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/Carousel.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ui/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/i18n.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18n.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locales/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/locales/en.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Dashboard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/plant/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/plant/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/router/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.jsx" afterDir="false" />
@@ -72,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1593450516868</updated>
       <workItem from="1593450518345" duration="1135000" />
-      <workItem from="1593451745115" duration="22027000" />
+      <workItem from="1593451745115" duration="23239000" />
     </task>
     <servers />
   </component>
@@ -96,13 +98,13 @@
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state x="229" y="60" key="SettingsEditor/0.23.1440.797@0.23.1440.797" timestamp="1593712959723" />
-    <state x="421" y="176" width="598" height="490" key="find.popup" timestamp="1593866516685">
+    <state x="421" y="176" width="598" height="490" key="find.popup" timestamp="1593867718488">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state x="421" y="176" width="598" height="490" key="find.popup/0.23.1440.797@0.23.1440.797" timestamp="1593866516685" />
-    <state x="385" y="144" width="670" height="676" key="search.everywhere.popup" timestamp="1593866110909">
+    <state x="421" y="176" width="598" height="490" key="find.popup/0.23.1440.797@0.23.1440.797" timestamp="1593867718488" />
+    <state x="385" y="144" width="670" height="676" key="search.everywhere.popup" timestamp="1593867877925">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state x="385" y="144" width="670" height="676" key="search.everywhere.popup/0.23.1440.797@0.23.1440.797" timestamp="1593866110909" />
+    <state x="385" y="144" width="670" height="676" key="search.everywhere.popup/0.23.1440.797@0.23.1440.797" timestamp="1593867877925" />
   </component>
 </project>
