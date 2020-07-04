@@ -1,31 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb4525c7-c00c-4f65-9f6a-ee4ba622e0da" name="Default" comment="" />
-    <option name="TRACKING_ENABLED" value="true" />
+    <list default="true" id="eb4525c7-c00c-4f65-9f6a-ee4ba622e0da" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/axios.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/Header.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/TextField.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/i18n.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/locales/en.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Dashboard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/plant/Taxonomy.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/plant/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/router/PrivateRoute.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/router/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/actions/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/actions/plants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/reducers/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/reducers/plants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="797" />
+  </component>
+  <component name="ProjectId" id="1e0HkogLcudk6uJbyiHsYev4Pls" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.linters.configure.manually.selectedeslint" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="$USER_HOME$/.npm-global/lib/node_modules/eslint" />
+    <property name="node.js.selected.package.standard" value="$PROJECT_DIR$/node_modules/eslint" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/plant" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="eb4525c7-c00c-4f65-9f6a-ee4ba622e0da" name="Default" comment="" />
       <created>1593450516868</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593450516868</updated>
+      <workItem from="1593450518345" duration="1135000" />
+      <workItem from="1593451745115" duration="17032000" />
     </task>
     <servers />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="539" y="194" key="#ESLint" timestamp="1593452826118">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="539" y="194" key="#ESLint/0.23.1440.797@0.23.1440.797" timestamp="1593452826118" />
+    <state x="441" y="137" key="#JavaScript" timestamp="1593455302945">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="441" y="137" key="#JavaScript/0.23.1440.797@0.23.1440.797" timestamp="1593455302945" />
+    <state x="457" y="230" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593455077902">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="457" y="230" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.797@0.23.1440.797" timestamp="1593455077902" />
+    <state x="229" y="60" key="SettingsEditor" timestamp="1593712959723">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="229" y="60" key="SettingsEditor/0.23.1440.797@0.23.1440.797" timestamp="1593712959723" />
+    <state x="421" y="176" width="598" height="490" key="find.popup" timestamp="1593713029850">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="421" y="176" width="598" height="490" key="find.popup/0.23.1440.797@0.23.1440.797" timestamp="1593713029850" />
+    <state x="385" y="144" width="670" height="676" key="search.everywhere.popup" timestamp="1593800052088">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="385" y="144" width="670" height="676" key="search.everywhere.popup/0.23.1440.797@0.23.1440.797" timestamp="1593800052088" />
   </component>
 </project>

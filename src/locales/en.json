@@ -1,0 +1,16 @@
+{
+  "translation": {
+    "dashboard": {
+      "search": "Find a plant!"
+    },
+    "plant_details": {
+      "taxonomy": {
+        "division": "Division",
+        "class": "Class",
+        "order": "Order",
+        "family": "Family",
+        "genus": "Genus"
+      }
+    }
+  }
+}
