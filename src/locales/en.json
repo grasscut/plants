@@ -11,6 +11,12 @@
         "order": "Order",
         "family": "Family",
         "genus": "Genus"
+      },
+      "badges": {
+        "flower_color": "Flower color is {{color}}",
+        "foliage_color": "Foliage color is {{color}}",
+        "seed_color": "Seed color is {{color}}",
+        "min_t": "Minimal temperature is {{t}}"
       }
     }
   }
