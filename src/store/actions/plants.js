@@ -1,4 +1,6 @@
 import axios from '../../axios';
+const CancelToken = axios.CancelToken;
+let source;
 
 export const getPlants = () => {
     return async (dispatch) => {
@@ -31,12 +33,20 @@ export const getPlants = () => {
 
 export const searchPlants = (searchString) => {
     return async (dispatch) => {
+        if (source) {
+            source.cancel();
+        }
+        source = CancelToken.source();
+
         dispatch({
             type: 'PLANTS_LOADING',
         });
 
         try {
-            const { data } = await axios.get('/plants', { params: { q: searchString } });
+            const { data } = await axios.get(
+                '/plants',
+                { params: { q: searchString }, cancelToken: source.token },
+            );
 
             dispatch({
                 type: 'PLANTS_RECEIVED',

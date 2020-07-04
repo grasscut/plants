@@ -5,6 +5,8 @@ const instance = axios.create({
     baseURL: 'https://trefle.io/api',
 });
 
+instance.CancelToken = axios.CancelToken;
+
 instance.interceptors.request.use((config) => {
     config.headers.common['Authorization'] = `Bearer ${store.getState().auth.token}`;
 
