@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Switch } from 'react-router-dom';
 import PrivateRoute from './PrivateRoute';
-import Dashboard from '../pages/Dashboard';
+import Dashboard from '../pages/dashboard';
 import PlantDetails from '../pages/plant';
 
 export default () => {
