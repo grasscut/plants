@@ -12,7 +12,7 @@ function App() {
 
     useEffect(() => {
         dispatch(getAuthenticationToken());
-    }, []);
+    }, [dispatch]);
 
     return (
         <div id="app">

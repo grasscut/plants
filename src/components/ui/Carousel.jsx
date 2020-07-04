@@ -16,9 +16,17 @@ export default ({ images = [] }) => {
         }
     }, [currentImageIndex, images.length]);
 
+    if (images.length === 0) {
+        return null;
+    }
+
     return (
-        <Box display="flex" alignItems="center">
-            <NavigateBeforeIcon onClick={() => navigate(-1)} />
+        <Box display="flex" justifyContent="space-between">
+            <Box display="flex" alignItems="center" onClick={() => navigate(-1)}>
+                <NavigateBeforeIcon
+                    color={currentImageIndex === 0 ? 'disabled' : 'primary'}
+                />
+            </Box>
             <Box position="relative">
                 <Backdrop open={isImageLoading} style={{ position: 'absolute', zIndex: 0 }}>
                     <CircularProgress />
@@ -29,7 +37,11 @@ export default ({ images = [] }) => {
                     onLoad={() => setIsImageLoading(false)}
                 />
             </Box>
-            <NavigateNextIcon onClick={() => navigate(1)} />
+            <Box display="flex" alignItems="center" onClick={() => navigate(1)}>
+                <NavigateNextIcon
+                    color={currentImageIndex === (images.length - 1) ? 'disabled' : 'primary'}
+                />
+            </Box>
         </Box>
     );
 };

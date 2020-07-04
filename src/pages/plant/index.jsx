@@ -14,7 +14,7 @@ export default () => {
 
     useEffect(() => {
         dispatch(getPlant(id));
-    }, [id]);
+    }, [dispatch, id]);
 
     if (!plant) {
         return null;

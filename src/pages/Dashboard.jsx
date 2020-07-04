@@ -18,7 +18,7 @@ export default () => {
 
     useEffect(() => {
         dispatch(getPlants());
-    }, []);
+    }, [dispatch]);
 
     const handleSearch = useCallback((event, searchString) => {
         event.preventDefault();
