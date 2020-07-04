@@ -2,29 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb4525c7-c00c-4f65-9f6a-ee4ba622e0da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/axios.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layout/Header.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/TextField.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/i18n.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/locales/en.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Dashboard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/plant/Taxonomy.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/plant/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/router/PrivateRoute.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/router/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/actions/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/actions/plants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/reducers/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/reducers/plants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/theme.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/Carousel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/plants.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/plant/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/plant/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1593450516868</updated>
       <workItem from="1593450518345" duration="1135000" />
-      <workItem from="1593451745115" duration="17032000" />
+      <workItem from="1593451745115" duration="20701000" />
     </task>
     <servers />
   </component>
@@ -108,9 +96,9 @@
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state x="421" y="176" width="598" height="490" key="find.popup/0.23.1440.797@0.23.1440.797" timestamp="1593713029850" />
-    <state x="385" y="144" width="670" height="676" key="search.everywhere.popup" timestamp="1593800052088">
+    <state x="385" y="144" width="670" height="676" key="search.everywhere.popup" timestamp="1593864250057">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state x="385" y="144" width="670" height="676" key="search.everywhere.popup/0.23.1440.797@0.23.1440.797" timestamp="1593800052088" />
+    <state x="385" y="144" width="670" height="676" key="search.everywhere.popup/0.23.1440.797@0.23.1440.797" timestamp="1593864250057" />
   </component>
 </project>
