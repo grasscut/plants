@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Grid, CircularProgress } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import { getPlants } from '../../store/actions/plants';
 import PlantSearch from './PlantSearch';
-import PlantCard from './PlantCard';
+import PlantList from './PlantList';
 
 export default () => {
     const dispatch = useDispatch();
@@ -21,18 +21,7 @@ export default () => {
             </Grid>
             <Grid item xs={12}>
                 <Grid container spacing={2} justify={loading ? 'center' : 'flex-start'}>
-                    {loading
-                        ? <CircularProgress />
-                        : (
-                            <>
-                                {allPlants.map((item) => (
-                                    <Grid item xs={12} sm={6} md={4} lg={3} xl={2} key={item.id}>
-                                        <PlantCard plant={item} />
-                                    </Grid>
-                                ))}
-                            </>
-                        )
-                    }
+                    <PlantList plants={allPlants} loading={loading} />
                 </Grid>
             </Grid>
         </Grid>
