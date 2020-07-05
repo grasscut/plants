@@ -3,7 +3,19 @@
     "dashboard": {
       "search": "Find a plant!",
       "search_hint": "Try <1>tapertip onion</1> or <3>Malus ×magdeburgensis</3>",
-      "no_results": "No search results available"
+      "no_results": "No search results available",
+      "advanced_search": {
+        "resprout_ability": {
+          "label": "Resprout ability"
+        },
+        "toxicity": {
+          "label": "Toxicity",
+          "options": {
+            "none": "none",
+            "severe": "severe"
+          }
+        }
+      }
     },
     "plant_details": {
       "taxonomy": {

@@ -24,7 +24,7 @@ export default ({ plant }) => {
             {!!data.flowerColor && (
                 <>
                     {t(
-                        `plant_details.description.flowers${data.flowerConspicuous && '_conspicuous'}`,
+                        `plant_details.description.flowers${data.flowerConspicuous ? '_conspicuous' : ''}`,
                         { color: data.flowerColor.toLowerCase() },
                     )}
                 </>

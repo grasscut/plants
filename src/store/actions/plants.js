@@ -31,7 +31,7 @@ export const getPlants = () => {
     };
 };
 
-export const searchPlants = (searchString) => {
+export const searchPlants = (searchString, advancedOptions = []) => {
     return async (dispatch) => {
         if (source) {
             source.cancel();
@@ -45,7 +45,7 @@ export const searchPlants = (searchString) => {
         try {
             const { data } = await axios.get(
                 '/plants',
-                { params: { q: searchString }, cancelToken: source.token },
+                { params: { q: searchString, ...advancedOptions }, cancelToken: source.token },
             );
 
             dispatch({
