@@ -2,7 +2,7 @@
   "translation": {
     "dashboard": {
       "search": "Find a plant!",
-      "search_hint": "Try <1>tapertip onion</1>",
+      "search_hint": "Try <1>tapertip onion</1> or <3>Malus ×magdeburgensis</3>",
       "no_results": "No search results available"
     },
     "plant_details": {

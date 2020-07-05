@@ -12,6 +12,15 @@ export default () => {
 
     const [searchString, setSearchString] = useState();
 
+    const SampleSearch = ({ children }) => (
+        <strong
+            style={{ cursor: 'pointer' }}
+            onClick={() => setSearchString(children)}
+        >
+            {children}
+        </strong>
+    );
+
     useEffect(() => {
         dispatch(searchPlants(searchString));
     }, [searchString]);
@@ -33,7 +42,8 @@ export default () => {
             <Box fontStyle="italic">
                 <Typography variant="caption">
                     <Trans i18nKey="dashboard.search_hint">
-                        Try <strong onClick={() => setSearchString('tapertip onion')}>tapertip onion</strong>
+                        Try <SampleSearch>tapertip onion</SampleSearch>
+                        or <SampleSearch>Malus ×magdeburgensis</SampleSearch>
                     </Trans>
                 </Typography>
             </Box>
