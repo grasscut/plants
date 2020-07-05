@@ -24,7 +24,7 @@ export default () => {
     }, [dispatch, id]);
 
     useEffect(() => {
-        if (plant && plant.division.id) {
+        if (plant && plant.division && plant.division.id) {
             dispatch(getDivision(plant.division.id));
         }
     }, [dispatch, plant]);
