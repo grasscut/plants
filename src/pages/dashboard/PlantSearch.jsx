@@ -74,7 +74,7 @@ export default () => {
                         setSearchString(event.target.value);
                     }}
                 />
-                <Box display={showAdvancedSettings ? 'block' : 'none'} mb={4}>
+                <Box hidden={!showAdvancedSettings} mb={4}>
                     {Object.keys(advancedSearchOptions).map((key) => (
                         <Box key={key} display="flex" alignItems="center">
                             <Typography variant="subtitle2">
@@ -86,7 +86,7 @@ export default () => {
                 </Box>
             </form>
 
-            <Box fontStyle="italic">
+            <Box fontStyle="italic" hidden={showAdvancedSettings}>
                 <Typography variant="caption">
                     <Trans i18nKey="dashboard.search_hint">
                         Try <SampleSearch>tapertip onion</SampleSearch>
