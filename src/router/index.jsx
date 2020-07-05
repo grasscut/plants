@@ -5,6 +5,7 @@ import Dashboard from '../pages/dashboard';
 import PlantDetails from '../pages/plant';
 
 export default () => {
+
     return (
         <BrowserRouter>
             <Switch>

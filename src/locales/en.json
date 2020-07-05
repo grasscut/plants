@@ -6,6 +6,8 @@
     },
     "plant_details": {
       "taxonomy": {
+        "kingdom": "Kingdom",
+        "subkingdom": "Subkingdom",
         "division": "Division",
         "class": "Class",
         "order": "Order",

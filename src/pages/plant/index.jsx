@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { Typography, Box, Grid } from '@material-ui/core';
 import { getPlant } from '../../store/actions/plants';
+import { getDivision } from '../../store/actions/divisions';
 import Taxonomy from './Taxonomy';
 import Badges from './Badges';
 import Description from './Description';
@@ -13,11 +14,20 @@ export default () => {
     const { id } = useParams();
 
     const plant = useSelector(state => state.plants.allPlants.find((item) => item.id === Number(id)));
+    const division = useSelector(state => (
+        !!plant && !!plant.division && state.divisions.allDivisions.find((item) => item.id === plant.division.id)
+    )) || {};
     const { loading } = useSelector(state => state.plants);
 
     useEffect(() => {
         dispatch(getPlant(id));
     }, [dispatch, id]);
+
+    useEffect(() => {
+        if (plant && plant.division.id) {
+            dispatch(getDivision(plant.division.id));
+        }
+    }, [dispatch, plant]);
 
     if (!plant || loading) {
         return null;
@@ -36,7 +46,7 @@ export default () => {
                 </Grid>
 
                 <Grid item xs={12} md={6}>
-                    <Taxonomy plant={plant} />
+                    <Taxonomy data={{ ...plant, ...division }} />
                 </Grid>
 
                 <Grid item xs={12}>
